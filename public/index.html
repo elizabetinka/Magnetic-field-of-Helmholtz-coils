@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магнитное поле катушек Гельмгольца.</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-blue-200">
+  <header class="text-center">
+    <br\>
+    <h1 class=" my-10 font-serif text-2xl ">Магнитное поле катушек Гельмгольца</h1>
+  </header>
+
+  <div class="split left">
+    <div class="centered">
+     
+      <div>
+      <label for="radius" id="radiusT">Радиус Катушек(см): 100</label>
+      <input type="range" id="radius" name="radius" min="0" max="200" value="100" />
+      </div>
+
+      <div>
+        <label for="cowbell" id="cowbellT">Количество витков: 50</label>
+        <input type="range" id="cowbell" name="cowbell" min="0" max="200" value="50" />
+      </div>
+      <div>
+        <label for="amper" id="amperT">Величина тока(A): 100</label>
+        <input type="range" id="amper" name="amper" min="0" max="200" value="100" />
+      </div>
+    </div>
+  </div>
+
+  <div class="split right">
+    <div class="centered">
+      <div id="tester" style="width:100%;height:400px; ">
+    </div>
+  </div>
+    
+
+  <footer class="footer text-lg">
+    <a href="https://t.me/Indo_evri_momint" target="_blank">Ссылка на telegram</a>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
