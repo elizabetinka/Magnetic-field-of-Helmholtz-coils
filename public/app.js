@@ -38,8 +38,8 @@ function showMessage(R,n,A) {
     let massx = [];
     let massy = [];
     R2 = R/100;
-    for (let i =0; i<R; ++i ){
-        massx.push(i);
+    for (let i =0; i<R2; i +=0.0001 ){
+        massx.push(i*100);
         B =  n*mu*A*R2*R2/2*(1/Math.pow(i*i+R2*R2,1.5)+1/Math.pow((i-R2)*(i-R2)+R2*R2,1.5))
         massy.push(B);
     }
